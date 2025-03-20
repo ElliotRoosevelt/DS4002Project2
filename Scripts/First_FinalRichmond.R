@@ -23,7 +23,7 @@ merged=merged[, c(1:8, 13, 15, 17:22, 26:31, 35:40, 44:49)]
 
 #renaming columns
 merged=merged%>%
-  rename(Census_FIP_Code=geoid20, 
+  rename(Census_FIPS_Code=geoid20, 
          Year=year,
          NativeAmerican_AlaskaNative=aian, 
          Asian=asian,
