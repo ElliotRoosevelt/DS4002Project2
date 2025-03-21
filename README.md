@@ -35,14 +35,14 @@ This folder contains:
 3. Name COI 3.0 overall index… into InitialCOIDataset and name Child population data… into InitalPopulationDemographicData.csv (title of csv needs to match the ones in this step for cleaning data steps to work).  OR download these datasets from the How to Obtain Original Dataset file. 
 ### Cleaning Data
 1. Download First_FinalRichmond.R to input, merge, and clean InitialCOIDataset.csv and InitalPopulationDemographicData.csv
-  A. Set R’s working directory to the folder where your two data sets are located (this folder is where the FinalRichmondCoiInequality.csv will be created)
-     i. To temporarily set a working directory (meaning when you exit R, you have to do this step again): Go to the “Session” tab, hover “Set Working Directory”, and click “Choose Directory”
-  B. Download each package (only need to do once) and run those packages in
-  C. Subset “orig” for only Richmond counties into a new data frame called “new”
-  D. Merge “pop” to “new” into new data frame “merged”
-  E. Rename columns in “merged” for clarity
-  F. Subset “merged” for only the columns you need
-  G. Simultaneously write the “merged” data frame into a dataset called FinalRichmondCoiInequality.csv while inputting this csv file into the folder where your directory is set. 
+* Set R’s working directory to the folder where your two data sets are located (this folder is where the FinalRichmondCoiInequality.csv will be created)
+     *  To temporarily set a working directory (meaning when you exit R, you have to do this step again): Go to the “Session” tab, hover “Set Working Directory”, and click “Choose Directory”
+* Download each package (only need to do once) and run those packages in
+* Subset “orig” for only Richmond counties into a new data frame called “new”
+* Merge “pop” to “new” into new data frame “merged”
+* Rename columns in “merged” for clarity
+* Subset “merged” for only the columns you need
+* Simultaneously write the “merged” data frame into a dataset called FinalRichmondCoiInequality.csv while inputting this csv file into the folder where your directory is set. 
 ### EDA
 For the GIF_EDA_Visualization.gif:
 1. Download GIF_EDA_Visualizations.R 
