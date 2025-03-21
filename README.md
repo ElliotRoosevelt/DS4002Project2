@@ -19,30 +19,30 @@ This folder contains:
 
 ### Scripts
 This folder contains:
-First_FinalRichmond.R Script to merge and clean InitialCOIDataset.csv and InitalPopulationDemographicData.csv into FinalRichmondCoiInequality.csv
-Richmond_COI_Inequality.ipnyb file of multiple EDA like Correlation Heat Map, Cross Tabulation, Pivot tables, and Boxplots, as well as regression outputs and predictions
-GIF_EDA_Visualizations.csv file of the EDA on COI by racial/ethnic groups over time
+* First_FinalRichmond.R Script to merge and clean InitialCOIDataset.csv and InitalPopulationDemographicData.csv into FinalRichmondCoiInequality.csv
+* Richmond_COI_Inequality.ipnyb file of multiple EDA like Correlation Heat Map, Cross Tabulation, Pivot tables, and Boxplots, as well as regression outputs and predictions
+* GIF_EDA_Visualizations.csv file of the EDA on COI by racial/ethnic groups over time
 
 ### Miscellaneous
-Our presentation
-References.pdf
+* Our presentation
+* References.pdf
 
 
 ## Section 3: Instructions for reproducing results.
 ### Finding Data
-Go to datadiversitykids.org and go to the “datasets” tab
-Find and download the COI 3.0 overall index and three domains - Child Opportunity Levels, Scores and composite z-scores for the overall index and three domains (2020 census tracts) and its corresponding Child population data - Number of children aged 0-17 years by race/ethnicity (2020 census tracts) into csv files
-Name COI 3.0 overall index… into InitialCOIDataset and name Child population data… into InitalPopulationDemographicData.csv (title of csv needs to match the ones in this step for cleaning data steps to work).  OR download these datasets from the How to Obtain Original Dataset file. 
+1. Go to datadiversitykids.org and go to the “datasets” tab
+2. Find and download the COI 3.0 overall index and three domains - Child Opportunity Levels, Scores and composite z-scores for the overall index and three domains (2020 census tracts) and its corresponding Child population data - Number of children aged 0-17 years by race/ethnicity (2020 census tracts) into csv files
+3. Name COI 3.0 overall index… into InitialCOIDataset and name Child population data… into InitalPopulationDemographicData.csv (title of csv needs to match the ones in this step for cleaning data steps to work).  OR download these datasets from the How to Obtain Original Dataset file. 
 ### Cleaning Data
-Download First_FinalRichmond.R to input, merge, and clean InitialCOIDataset.csv and InitalPopulationDemographicData.csv
-Set R’s working directory to the folder where your two data sets are located (this folder is where the FinalRichmondCoiInequality.csv will be created)
-To temporarily set a working directory (meaning when you exit R, you have to do this step again): Go to the “Session” tab, hover “Set Working Directory”, and click “Choose Directory”
-Download each package (only need to do once) and run those packages in
-Subset “orig” for only Richmond counties into a new data frame called “new”
-Merge “pop” to “new” into new data frame “merged”
-Rename columns in “merged” for clarity
-Subset “merged” for only the columns you need
-Simultaneously write the “merged” data frame into a dataset called FinalRichmondCoiInequality.csv while inputting this csv file into the folder where your directory is set. 
+1. Download First_FinalRichmond.R to input, merge, and clean InitialCOIDataset.csv and InitalPopulationDemographicData.csv
+2. Set R’s working directory to the folder where your two data sets are located (this folder is where the FinalRichmondCoiInequality.csv will be created)
+- To temporarily set a working directory (meaning when you exit R, you have to do this step again): Go to the “Session” tab, hover “Set Working Directory”, and click “Choose Directory”
+- Download each package (only need to do once) and run those packages in
+- Subset “orig” for only Richmond counties into a new data frame called “new”
+- Merge “pop” to “new” into new data frame “merged”
+- Rename columns in “merged” for clarity
+- Subset “merged” for only the columns you need
+- Simultaneously write the “merged” data frame into a dataset called FinalRichmondCoiInequality.csv while inputting this csv file into the folder where your directory is set. 
 ### EDA
 For both gifs:
 Download GIF_EDA_Visualizations.R 
