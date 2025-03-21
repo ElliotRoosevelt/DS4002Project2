@@ -1,24 +1,21 @@
-# DS4002Project2
-Repo for DS 4002 Prototyping Class-Project 2
-
 ## Section 1: Software and platform used.
-Software: Jupyter Notebook, R, Excel, GitHub
-Add-on packages on Python Notebook: pandas, numpy, matplotlib, statsmodels.api, sklearn.metrics
+**Software:** Jupyter Notebook, R, Excel, GitHub
+**Add-on packages on Python Notebook:** pandas, numpy, matplotlib, statsmodels.api, sklearn.metrics
+**Platform:** Mac and Windows
 
-Platform: Mac and Windows
 ## Section 2: A Map of our Documentation
-### Data 
+## Data 
 This folder contains:
-How to Obtain Initial Dataset file that describes how to access the InitialCOIDataset.csv and InitalPopulationDemographicData.csv 
-Merged and cleaned FinalRichmondCoiInequality.csv
-Data Appendix
+* How to Obtain Initial Dataset file that describes how to access the InitialCOIDataset.csv and InitalPopulationDemographicData.csv 
+* Merged and cleaned FinalRichmondCoiInequality.csv
+* Data Appendix
 ### Output
 This folder contains:
-Distribution of COI Scores across 2012 to 2021
-Correlation heatmap for the entire dataset
-Regression model results
-Comparison of Actual and Predicted COI Scores for 2021
-Visualization of Actual and Predicted COI Scores for 2021
+* Distribution of COI Scores across 2012 to 2021
+* Correlation heatmap for the entire dataset
+* Regression model results
+* Comparison of Actual and Predicted COI Scores for 2021
+* Visualization of Actual and Predicted COI Scores for 2021
 
 ### Scripts
 This folder contains:
@@ -36,7 +33,6 @@ References.pdf
 Go to datadiversitykids.org and go to the “datasets” tab
 Find and download the COI 3.0 overall index and three domains - Child Opportunity Levels, Scores and composite z-scores for the overall index and three domains (2020 census tracts) and its corresponding Child population data - Number of children aged 0-17 years by race/ethnicity (2020 census tracts) into csv files
 Name COI 3.0 overall index… into InitialCOIDataset and name Child population data… into InitalPopulationDemographicData.csv (title of csv needs to match the ones in this step for cleaning data steps to work).  OR download these datasets from the How to Obtain Original Dataset file. 
-
 ### Cleaning Data
 Download First_FinalRichmond.R to input, merge, and clean InitialCOIDataset.csv and InitalPopulationDemographicData.csv
 Set R’s working directory to the folder where your two data sets are located (this folder is where the FinalRichmondCoiInequality.csv will be created)
@@ -47,7 +43,6 @@ Merge “pop” to “new” into new data frame “merged”
 Rename columns in “merged” for clarity
 Subset “merged” for only the columns you need
 Simultaneously write the “merged” data frame into a dataset called FinalRichmondCoiInequality.csv while inputting this csv file into the folder where your directory is set. 
-
 ### EDA
 For both gifs:
 Download GIF_EDA_Visualizations.R 
