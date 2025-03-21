@@ -26,6 +26,8 @@ This folder contains:
 ### Miscellaneous
 * Our presentation
 * References.pdf
+* LICENSE.md
+* This README.md file
 
 
 ## Section 3: Instructions for reproducing results.
