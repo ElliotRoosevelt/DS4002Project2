@@ -14,7 +14,7 @@ library(gifski)
 #This category order will not be displayed in the ds but will be ordered this way in the visualization
 eda=eda%>%
   mutate(COI_Level_Metro=factor(COI_Level_Metro, 
-                                levels = c("Very Low", "Low", "Moderate","High","Very High")))
+                                levels=c("Very Low", "Low", "Moderate","High","Very High")))
 
 #Mutating Race_Ethnicity column so that the category order is alphabetical
 #This category order will not be displayed in the ds but will be ordered this way in the visualization
@@ -26,7 +26,7 @@ edaLong=melt(eda,
          id.vars=c("Census_FIP_Code", "Year", "TotalNumberChildren","county_name", "metro_name", "COI_Level_Metro", "COI_Scores_Metro", "Education_Level_Metro", "Education_Score_Metro", "HealthEnviro_Level_Metro", "HealthEnviro_Score_Metro", "SocialEconomic_Level_Metro", "SocialEconomic_Score_Metro"), 
          measurevars=3:7, 
          variable.name="Race_Ethnicity",
-         value.name ="Count")
+         value.name="Count")
 #making Count column as numeric
 edaLong=edaLong%>%
   mutate(Count=as.numeric(Count)) 
@@ -36,15 +36,15 @@ edaLong=edaLong%>%
 
 #creating new data frame grouped for COI level by race/ethnicity for 2012-2021
 edaAll=edaLong%>%
-  group_by(Year, Race_Ethnicity,COI_Level_Metro) %>%
-  summarise(total_count=sum(Count), .groups = "drop") %>%
+  group_by(Year, Race_Ethnicity,COI_Level_Metro)%>%
+  summarise(total_count=sum(Count), .groups = "drop")%>%
   group_by(Year, COI_Level_Metro) %>%
   mutate(percentage = (total_count / sum(total_count)) * 100)%>%
   ungroup()
 
 #making sure percentage is 100% for every COI level category for every year
-eda_check=edaAll %>%
-  group_by(Year, COI_Level_Metro) %>%
+eda_check=edaAll%>%
+  group_by(Year, COI_Level_Metro)%>%
   summarise(total_percentage= sum(percentage))
 print(eda_check)
 
