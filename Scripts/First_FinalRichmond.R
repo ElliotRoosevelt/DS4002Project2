@@ -62,4 +62,4 @@ merged=merged%>%
 merged=merged[, c(1:10, 13, 16, 19, 22, 25, 28, 31, 34)]
 
 #creating merged into new file called richmondCoiInequality.csv (make sure your directory is set to the right folder you want this file to be created in)
-write.csv(merged,"richmondCoiInequality.csv",row.names=FALSE)
+write.csv(merged,"FinalRichmondCoiInequality.csv",row.names=FALSE)
