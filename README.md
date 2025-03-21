@@ -45,21 +45,21 @@ This folder contains:
 - Simultaneously write the “merged” data frame into a dataset called FinalRichmondCoiInequality.csv while inputting this csv file into the folder where your directory is set. 
 ### EDA
 For both gifs:
-Download GIF_EDA_Visualizations.R 
-Follow steps indicated
+1. Download GIF_EDA_Visualizations.R 
+1. Follow steps indicated
 For Boxplot and Pivot Table EDA in Richmond_COI_Inequality.ipynb
-Follow sthe teps in Import Dataset
-Boxplot Visualization: Follow Boxplot steps
-Pivot Table Visualization: Follow Pivot Table steps
+1. Follow the steps in Import Dataset
+2. Boxplot Visualization: Follow Boxplot steps
+3. Pivot Table Visualization: Follow Pivot Table steps
 
 ### Analysis and Results
-Open the Jupyter notebook “Richmond_COI_Inequality”
-After importing the dataset which is included in Github, generate the correlation map to determine the target explanatory variables, which should be 'White', 'Education_Score_Metro', 'HealthEnviro_Score_Metro', and 'SocialEconomic_Score_Metro'
-Go to the section of “Multiple Linear Regression” and follow the comments in the codes
-Filter the data: separate the training data of 2012-2020 and test data of 2021
-Define features and target variable
-Fit the multiple regression model using statsmodels
-Use the model to predict 2021 COI scores 
-Evaluate the model on 2021 data, including r-square and MSE
-Compare actual and predicted COI scores for 2021
-Generate the visualization of Actual and Predicted COI Scores for 2021
+1. Open the Jupyter notebook “Richmond_COI_Inequality”
+2. After importing the dataset which is included in Github, generate the correlation map to determine the target explanatory variables, which should be 'White', 'Education_Score_Metro', 'HealthEnviro_Score_Metro', and 'SocialEconomic_Score_Metro'
+3. Go to the section of “Multiple Linear Regression” and follow the comments in the codes
+  - Filter the data: separate the training data of 2012-2020 and test data of 2021
+  - Define features and target variable
+  - Fit the multiple regression model using statsmodels
+  - Use the model to predict 2021 COI scores 
+  - Evaluate the model on 2021 data, including r-square and MSE
+  - Compare actual and predicted COI scores for 2021
+  - Generate the visualization of Actual and Predicted COI Scores for 2021
