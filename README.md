@@ -12,11 +12,13 @@ This folder contains:
 * Data Appendix
 ### Output
 This folder contains:
-* Distribution of COI Scores across 2012 to 2021
-* Correlation heatmap for the entire dataset
-* Regression model results
-* Comparison of Actual and Predicted COI Scores for 2021
-* Visualization of Actual and Predicted COI Scores for 2021
+* Boxplot_COIScores_Year.png
+* COI_Distribution_2012_2020.gif
+* COI_OutputScores_RichmondCounties.png
+* Correlation Heatmap.png for the entire dataset
+* Regression Model Results.png
+* Comparison of Actual and Predicted COI Scores for 2021.png
+* Visualization of Actual and Predicted COI Scores for 2021.png
 
 ### Scripts
 This folder contains:
