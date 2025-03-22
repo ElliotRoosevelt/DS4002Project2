@@ -7,7 +7,7 @@
 ## Section 2: A Map of our Documentation
 ### Data 
 This folder contains:
-* How to Obtain Initial Dataset file that describes how to access the InitialCOIDataset.csv and InitalPopulationDemographicData.csv 
+* How to Obtain Initial Dataset file that describes how to access the InitialCOIDataset.csv and InitalPopulationDemographicData.csv through Google Drive
 * Merged and cleaned FinalRichmondCoiInequality.csv
 * Data Appendix
 ### Output
