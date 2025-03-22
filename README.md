@@ -28,7 +28,7 @@ This folder contains:
 
 ### Miscellaneous
 * Our presentation
-* References.pdf
+* References
 * LICENSE.md
 * This README.md file
 
