@@ -1,7 +1,7 @@
 ## Section 1: Software and platform used.
-**Software:** Jupyter Notebook, R, Excel, GitHub
-**Add-on packages on Python Notebook:** pandas, numpy, matplotlib, statsmodels.api, sklearn.metrics
-**Platform:** Mac and Windows
+* **Software:** Jupyter Notebook, R, Excel, GitHub
+* **Add-on packages on Python Notebook:** pandas, numpy, matplotlib, statsmodels.api, sklearn.metrics
+* **Platform:** Mac and Windows
 
 ## Section 2: A Map of our Documentation
 ### Data 
